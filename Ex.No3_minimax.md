@@ -1,6 +1,6 @@
 # Ex.No: 3  Implementation of Minimax Search
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 24/02/2024                                                                        
+### REGISTER NUMBER : 212221060251
 ### AIM: 
 Write a mini-max search algorithm to find the optimal value of MAX Player from the given graph.
 ### Algorithm:
@@ -16,17 +16,23 @@ Write a mini-max search algorithm to find the optimal value of MAX Player from t
 
 ### Program:
 
+```
+import math def minimax (curDepth, nodeIndex, maxTurn, scores,targetDepth): # base case : targetDepth reached if (curDepth == targetDepth): return scores[nodeIndex] if (maxTurn): return max(minimax(curDepth + 1, nodeIndex * 2,False, scores, targetDepth), minimax(curDepth + 1, nodeIndex * 2 + 1, False, scores, targetDepth))
+
+else:
+    return min(minimax(curDepth + 1, nodeIndex * 2, True, scores, targetDepth),
+               minimax(curDepth + 1, nodeIndex * 2 + 1,
+                 True, scores, targetDepth))
 
 
-
-
-
+```
 
 
 
 
 
 ### Output:
+![image](https://github.com/ShaikSandeep9/AI_Lab_2023-24/assets/103145608/240ab4a3-3ef7-4278-a715-d0d3c821e77b)
 
 
 
