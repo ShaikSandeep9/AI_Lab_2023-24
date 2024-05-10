@@ -12,7 +12,7 @@ Step 5:   Define a problem for Monkey Banana problem.<br>
 Step 6:  Obtain the plan for given problem.<br> 
 Step 7: Stop the program.<br> 
 ### Program:
-
+```
 (define (domain monkey)	       
   (:requirements :strips)
    (:constants monkey box knife bananas glass waterfountain)
@@ -61,8 +61,9 @@ Step 7: Stop the program.<br>
 				 (at monkey ?y)
 				 (onbox ?y))
 	     :effect (haswater)))
-
+```
 ### Input 
+```
 Problem :
 (define (problem pb1)
     	(:domain monkey)
@@ -79,6 +80,7 @@ Problem :
 	)
   	(:goal (and (hasbananas)))
 )
+```
 ### Output/Plan:
 
 ![image](https://github.com/ShaikSandeep9/AI_Lab_2023-24/assets/103145608/0bf6f6af-31a9-4df6-934c-ec786bbb3eb9)
